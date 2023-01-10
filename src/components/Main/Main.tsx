@@ -1,8 +1,8 @@
 import { PropsWithChildren } from "react";
 import * as S from "./styles";
 
-function Main({ children }: PropsWithChildren) {
+const Main = ({ children }: PropsWithChildren) => {
   return <S.Main>{children}</S.Main>;
-}
+};
 
 export default Main;

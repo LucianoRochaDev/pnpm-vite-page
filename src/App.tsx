@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import ActionsGroup from "./components/Header/ActionsGroup";
 import Header from "./components/Header/Header";
 import Logo from "./components/Header/Logo";
@@ -9,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Fragment>
+    <>
       <Header>
         <Logo></Logo>
         <Navbar></Navbar>
@@ -20,7 +19,7 @@ function App() {
         <Article></Article>
         <Article></Article>
       </Main>
-    </Fragment>
+    </>
   );
 }
 
