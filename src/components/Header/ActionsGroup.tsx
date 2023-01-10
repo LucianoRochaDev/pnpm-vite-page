@@ -1,5 +1,11 @@
+import * as S from "./styles";
+
 const ActionsGroup = () => {
-  return <div>ACTIONS GROUP</div>;
+  return (
+    <>
+      <S.Button>Contato</S.Button>
+    </>
+  );
 };
 
 export default ActionsGroup;

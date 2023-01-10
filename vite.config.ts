@@ -5,7 +5,9 @@ import linaria from "@linaria/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      include: ["**/*.{ts,tsx}"],
+    }),
     linaria({
       include: ["**/*.{ts,tsx}"],
       babelOptions: {
