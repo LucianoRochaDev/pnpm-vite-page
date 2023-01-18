@@ -1,5 +1,5 @@
 {
-  "name": "pnpm-vite",
+  "name": "pnpm-vite-page",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -14,9 +14,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/preset-react": "^7.18.6",
-    "@babel/preset-typescript": "^7.18.6",
+    "@linaria/babel-preset": "^4.3.3",
     "@linaria/react": "^4.3.3",
     "@linaria/vite": "^4.2.5",
     "@types/react": "^18.0.26",
@@ -26,6 +24,6 @@
     "vite": "^4.0.0"
   },
   "devDependeciesComments": {
-    "linaria": "Testando sem @linaria/babel-preset e @linaria/core, dependencias default do linaria"
+    "linaria": "Testando sem @linaria/core por que nao usarei 'css', só o 'styled' do  linaria/react"
   }
 }

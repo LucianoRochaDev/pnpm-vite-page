@@ -1,10 +1,10 @@
+import "./App.css";
 import ActionsGroup from "./components/Header/ActionsGroup";
 import Header from "./components/Header/Header";
 import Logo from "./components/Header/Logo";
 import Navbar from "./components/Header/Navbar";
-import Article from "./components/Main/Article";
 import Main from "./components/Main/Main";
-import "./App.css";
+import { Article } from "./components/Main/styles";
 
 function App() {
   return (

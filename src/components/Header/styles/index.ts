@@ -16,7 +16,7 @@ export const Header = styled.header`
 
 export const Button = styled.button`
   background-color: #0078d0;
-  height: 40px;
+  height: 35px;
   border: 0;
   border-radius: 56px;
   color: #fff;
@@ -29,6 +29,8 @@ export const Button = styled.button`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  font-weight: 500;
+  letter-spacing: 0.8px;
 
   &:before {
     background-color: initial;
@@ -61,7 +63,6 @@ export const NavList = styled.nav`
 
   & a {
     background-image: linear-gradient(to right, #0078d0, #0078d0 50%, #000 50%);
-    /* color: #281d1a; */
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -74,6 +75,8 @@ export const NavList = styled.nav`
 
     text-decoration: none;
     font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
   }
 
   & a:before {
@@ -81,10 +84,10 @@ export const NavList = styled.nav`
     background: #0078d0;
     display: block;
     position: absolute;
-    bottom: -3px;
+    bottom: 0;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     transition: all 0.3s ease-in-out;
   }
 
@@ -117,4 +120,30 @@ export const BlurTransition = styled.div`
         opacity: 0;
     }
 } */
+`;
+
+export const DanceTransition = styled.div`
+  &:hover {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: danceTop;
+    transform-origin: top;
+  }
+  @keyframes danceTop {
+    16% {
+      transform: skew(-14deg);
+    }
+    33% {
+      transform: skew(12deg);
+    }
+    49% {
+      transform: skew(-8deg);
+    }
+    66% {
+      transform: skew(6deg);
+    }
+    83% {
+      transform: skew(-4deg);
+    }
+  }
 `;

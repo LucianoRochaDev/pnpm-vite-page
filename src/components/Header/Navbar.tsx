@@ -5,7 +5,7 @@ const Navbar = () => {
     <S.NavList>
       <a href="">Home</a>
 
-      <a href="">Clentes</a>
+      <a href="">Clientes</a>
 
       <a href="">Serviços</a>
 
